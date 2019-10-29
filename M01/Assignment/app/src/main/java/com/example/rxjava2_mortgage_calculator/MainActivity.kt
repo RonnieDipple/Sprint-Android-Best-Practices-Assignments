@@ -2,16 +2,19 @@ package com.example.rxjava2_mortgage_calculator
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import com.jakewharton.rxbinding3.widget.textChanges
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
 import io.reactivex.rxkotlin.Observables
+import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_main.*
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.create
+import kotlin.math.pow
 
 /*# Sprint-Android-Best-Practices
 
@@ -35,45 +38,79 @@ import retrofit2.create
 class MainActivity : AppCompatActivity() {
 
     lateinit var disposable: Disposable
+    lateinit var secondDisposable: Disposable
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val obsPurchasePrice = edit_text_purchase_price.textChanges().filter{it.length>1}
-        val obsDownPayment = edit_text_down_payment.textChanges().filter{it.length>1}
-        val obsInterestRate = edit_text_interest_rate.textChanges().filter{it.length>1}
-        val obsLoanLength = edit_text_loan_length.textChanges().filter{it.length>1}
+        val obsPurchasePrice = edit_text_purchase_price.textChanges().filter { it.length > 1 }
+        val obsDownPayment = edit_text_down_payment.textChanges().filter { it.length > 1 }
+        val obsInterestRate = edit_text_interest_rate.textChanges().filter { it.length > 1 }
+        val obsLoanLength = edit_text_loan_length.textChanges().filter { it.length > 1 }
 
 
-        val obsCombined = Observables.combineLatest(obsPurchasePrice, obsDownPayment, obsInterestRate, obsLoanLength) {
-                purchasePrice,
-                downPayment,
-                interestRate,
-                loanLength ->
-
+        val obsCombined = Observables.combineLatest(
+            obsPurchasePrice,
+            obsDownPayment,
+            obsInterestRate,
+            obsLoanLength
+        ) { purchasePrice,
+            downPayment,
+            interestRate,
+            loanLength ->
+            calculateNum(purchasePrice, downPayment, interestRate, loanLength)
 
 
         }
 
+        disposable = obsCombined.observeOn(AndroidSchedulers.mainThread()).subscribe {nums -> text_view.text = nums.toString()}
 
         val retrofit = Retrofit.Builder().baseUrl("https://qrng.anu.edu.au/API/")
             .addConverterFactory(GsonConverterFactory.create())
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .build()
 
-        val service = retrofit.create(MortgageNumbers::class.java)
+        val service = retrofit.create(GetRandomNumber::class.java)
+
+        disposable = service.getRandomNum("2", "uint8")
+            .subscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
+            .subscribe(
+                {numbers ->
+                    val numsList = numbers.nums.toIntArray()
+                    numsList.sort()
+                    val n = numsList[0] / 1000.toDouble()
+                    edit_text_purchase_price.setText("${numsList[3] * 10}")
+                    edit_text_down_payment.setText("${numsList[2]}")
+                    edit_text_interest_rate.setText("$n")
+                    edit_text_loan_length.setText("${numsList[1] / 1000}")
+
+                },
+        {fail -> println(fail)}
+        )
 
 
+    }
 
+    private fun calculateNum(
+        purchasePrice: CharSequence,
+        downPayment: CharSequence,
+        interestRate: CharSequence,
+        loanLength: CharSequence
+    ): String {
 
+        val pPrice = purchasePrice.toString().toDouble()
+        val dPayment = downPayment.toString().toDouble()
+        val iRate = interestRate.toString().toDouble()
+        val lLength = loanLength.toString().toDouble()
+        val x = pPrice - dPayment
+        val y = (iRate / 100) / 12
+        val z = lLength * 12
 
+        val stringSplitter = z.toString().split(".")
+        val stringNum = stringSplitter[0]
 
-
-
-
-
-
-
+        return "That will be $stringNum monthly "
 
 
     }
