@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-        val retrofit = Retrofit.Builder().baseUrl("https://qrng.anu.edu.au/API/jsonI.php?length=2&type=uint8")
+        val retrofit = Retrofit.Builder().baseUrl("https://qrng.anu.edu.au/API/")
             .addConverterFactory(GsonConverterFactory.create())
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .build()
@@ -76,5 +76,10 @@ class MainActivity : AppCompatActivity() {
 
 
 
+    }
+
+    override fun onDestroy() {
+        disposable.dispose()
+        super.onDestroy()
     }
 }
