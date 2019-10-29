@@ -4,9 +4,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.jakewharton.rxbinding3.widget.textChanges
 import io.reactivex.Observable
+import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
 import io.reactivex.rxkotlin.Observables
 import kotlinx.android.synthetic.main.activity_main.*
+import retrofit2.Retrofit
+import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
+import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.create
 
 /*# Sprint-Android-Best-Practices
 
@@ -45,9 +50,20 @@ class MainActivity : AppCompatActivity() {
                 downPayment,
                 interestRate,
                 loanLength ->
-            
+
+
 
         }
+
+
+        val retrofit = Retrofit.Builder().baseUrl("https://qrng.anu.edu.au/API/jsonI.php?length=2&type=uint8")
+            .addConverterFactory(GsonConverterFactory.create())
+            .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+            .build()
+
+        val service = retrofit.create(MortgageNumbers::class.java)
+
+
 
 
 
