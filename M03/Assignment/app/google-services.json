@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "41570530939",
+    "firebase_url": "https://reading-list-cf07e.firebaseio.com",
+    "project_id": "reading-list-cf07e",
+    "storage_bucket": "reading-list-cf07e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41570530939:android:c85191283f0cbab5a494de",
+        "android_client_info": {
+          "package_name": "com.lambdaschool.readinglist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41570530939-3dukt54cbfu1mi9emsmeqskfbgs7a4se.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lambdaschool.readinglist",
+            "certificate_hash": "b79c939a272e546cb94885cf26e5b542ed1de877"
+          }
+        },
+        {
+          "client_id": "41570530939-ct6rgsd3ecsg7qq7cldqh5vgeeb2viie.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeRKK8huL49R_Cfh1CQT6naxA7jlQod_A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41570530939-ct6rgsd3ecsg7qq7cldqh5vgeeb2viie.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
