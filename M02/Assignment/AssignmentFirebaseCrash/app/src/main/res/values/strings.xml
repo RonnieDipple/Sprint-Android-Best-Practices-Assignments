@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">AssignmentFirebaseCrash</string>
+    <string name="divide_by_0_to_crash">Divide by 0 to crash</string>
+    <string name="null_pointer_exception">Null pointer exception</string>
+    <string name="out_of_bounds_exception">Out Of Bounds Exception</string>
+    <string name="on_click_throwable_exception">On Click Throwable Exception</string>
 </resources>
