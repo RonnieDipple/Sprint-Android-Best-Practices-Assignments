@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">CrashlyticsDemoM02Ronnie</string>
+    <string name="lambda_logo">Lambda Logo</string>
+    <string name="crash_testing">Crash Testing</string>
+    <string name="force_a_crash">Force A Crash</string>
+    <string name="other_activity">Other Activity</string>
+    <string name="next_fact">Next Fact</string>
 </resources>
