@@ -5,7 +5,11 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+<<<<<<< HEAD
 import com.google.firebase.analytics.FirebaseAnalytics
+=======
+import androidx.constraintlayout.widget.ConstraintLayout
+>>>>>>> upstream/master
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -20,8 +24,11 @@ class MainActivity : AppCompatActivity() {
 
         preferences = getSharedPreferences(Constants.BOOK_PREFERENCES, Context.MODE_PRIVATE)
 
+<<<<<<< HEAD
         FirebaseAnalytics.getInstance(this).setCurrentScreen(this, "Mainactivityy", "Lone Ranger")
 
+=======
+>>>>>>> upstream/master
         add_book_button.setOnClickListener {
             val intent = Intent(context, EditBookActivity::class.java)
             val nextId = BookRepo.nextId().toString()
@@ -43,6 +50,7 @@ class MainActivity : AppCompatActivity() {
         if (requestCode == Constants.NEW_BOOK_REQUEST_CODE && resultCode == RESULT_OK) {
             if (data != null) {
                 BooksController.handleEditActivityResult(data)
+<<<<<<< HEAD
                 val bookCsv = data.getStringExtra(Constants.EDIT_BOOK_TAG)
                 val book = Book(bookCsv)
                 val bundle = Bundle()
@@ -50,6 +58,8 @@ class MainActivity : AppCompatActivity() {
                 bundle.putString("reasonToRead", book.reasonToRead)
                 bundle.putBoolean("isHasBeenRead", book.isHasBeenRead)
                 FirebaseAnalytics.getInstance(this).logEvent("book_added", bundle)
+=======
+>>>>>>> upstream/master
             }
         }
         if (requestCode == Constants.EDIT_BOOK_REQUEST_CODE && resultCode == RESULT_OK) {

@@ -5,7 +5,10 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+<<<<<<< HEAD
 import com.google.firebase.analytics.FirebaseAnalytics
+=======
+>>>>>>> upstream/master
 import kotlinx.android.synthetic.main.activity_edit_book.*
 
 class EditBookActivity : AppCompatActivity() {
@@ -16,8 +19,11 @@ class EditBookActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edit_book)
 
+<<<<<<< HEAD
         FirebaseAnalytics.getInstance(this).setCurrentScreen(this, "EditBookActivity", "Tonto")
 
+=======
+>>>>>>> upstream/master
         context = this
     }
 

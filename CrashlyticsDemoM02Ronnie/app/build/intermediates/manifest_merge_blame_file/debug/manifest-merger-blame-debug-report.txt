@@ -1,0 +1,181 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.crashlyticsdemom02ronnie"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\Ronni\AndroidStudioProjects\Sprint-Android-Best-Practices-Assignments\CrashlyticsDemoM02Ronnie\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\Ronni\AndroidStudioProjects\Sprint-Android-Best-Practices-Assignments\CrashlyticsDemoM02Ronnie\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\9a43e0b4c1495a4e50b462e338649fdf\jetified-crashlytics-2.10.1\AndroidManifest.xml:16:5-67
+11-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\9a43e0b4c1495a4e50b462e338649fdf\jetified-crashlytics-2.10.1\AndroidManifest.xml:16:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\645802d86b83dfdf425b1e2d3f143b9d\play-services-measurement-17.2.1\AndroidManifest.xml:24:5-79
+12-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\645802d86b83dfdf425b1e2d3f143b9d\play-services-measurement-17.2.1\AndroidManifest.xml:24:22-76
+13    <uses-permission android:name="android.permission.WAKE_LOCK" />
+13-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\645802d86b83dfdf425b1e2d3f143b9d\play-services-measurement-17.2.1\AndroidManifest.xml:25:5-68
+13-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\645802d86b83dfdf425b1e2d3f143b9d\play-services-measurement-17.2.1\AndroidManifest.xml:25:22-65
+14    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+14-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\645802d86b83dfdf425b1e2d3f143b9d\play-services-measurement-17.2.1\AndroidManifest.xml:26:5-110
+14-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\645802d86b83dfdf425b1e2d3f143b9d\play-services-measurement-17.2.1\AndroidManifest.xml:26:22-107
+15    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+15-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\26dfc9ac4912cedae4578daa012fd795\firebase-iid-19.0.0\AndroidManifest.xml:26:5-82
+15-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\26dfc9ac4912cedae4578daa012fd795\firebase-iid-19.0.0\AndroidManifest.xml:26:22-79
+16
+17    <application
+17-->C:\Users\Ronni\AndroidStudioProjects\Sprint-Android-Best-Practices-Assignments\CrashlyticsDemoM02Ronnie\app\src\main\AndroidManifest.xml:5:5-19:19
+18        android:allowBackup="true"
+18-->C:\Users\Ronni\AndroidStudioProjects\Sprint-Android-Best-Practices-Assignments\CrashlyticsDemoM02Ronnie\app\src\main\AndroidManifest.xml:6:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.1.0] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\e85c30623951bbc0e273ef2c17518b47\core-1.1.0\AndroidManifest.xml:24:18-86
+20        android:debuggable="true"
+21        android:icon="@mipmap/ic_launcher"
+21-->C:\Users\Ronni\AndroidStudioProjects\Sprint-Android-Best-Practices-Assignments\CrashlyticsDemoM02Ronnie\app\src\main\AndroidManifest.xml:7:9-43
+22        android:label="@string/app_name"
+22-->C:\Users\Ronni\AndroidStudioProjects\Sprint-Android-Best-Practices-Assignments\CrashlyticsDemoM02Ronnie\app\src\main\AndroidManifest.xml:8:9-41
+23        android:roundIcon="@mipmap/ic_launcher_round"
+23-->C:\Users\Ronni\AndroidStudioProjects\Sprint-Android-Best-Practices-Assignments\CrashlyticsDemoM02Ronnie\app\src\main\AndroidManifest.xml:9:9-54
+24        android:supportsRtl="true"
+24-->C:\Users\Ronni\AndroidStudioProjects\Sprint-Android-Best-Practices-Assignments\CrashlyticsDemoM02Ronnie\app\src\main\AndroidManifest.xml:10:9-35
+25        android:theme="@style/AppTheme" >
+25-->C:\Users\Ronni\AndroidStudioProjects\Sprint-Android-Best-Practices-Assignments\CrashlyticsDemoM02Ronnie\app\src\main\AndroidManifest.xml:11:9-40
+26        <activity android:name="com.example.crashlyticsdemom02ronnie.MainActivity" >
+26-->C:\Users\Ronni\AndroidStudioProjects\Sprint-Android-Best-Practices-Assignments\CrashlyticsDemoM02Ronnie\app\src\main\AndroidManifest.xml:12:9-18:20
+26-->C:\Users\Ronni\AndroidStudioProjects\Sprint-Android-Best-Practices-Assignments\CrashlyticsDemoM02Ronnie\app\src\main\AndroidManifest.xml:12:19-47
+27            <intent-filter>
+27-->C:\Users\Ronni\AndroidStudioProjects\Sprint-Android-Best-Practices-Assignments\CrashlyticsDemoM02Ronnie\app\src\main\AndroidManifest.xml:13:13-17:29
+28                <action android:name="android.intent.action.MAIN" />
+28-->C:\Users\Ronni\AndroidStudioProjects\Sprint-Android-Best-Practices-Assignments\CrashlyticsDemoM02Ronnie\app\src\main\AndroidManifest.xml:14:17-69
+28-->C:\Users\Ronni\AndroidStudioProjects\Sprint-Android-Best-Practices-Assignments\CrashlyticsDemoM02Ronnie\app\src\main\AndroidManifest.xml:14:25-66
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->C:\Users\Ronni\AndroidStudioProjects\Sprint-Android-Best-Practices-Assignments\CrashlyticsDemoM02Ronnie\app\src\main\AndroidManifest.xml:16:17-77
+30-->C:\Users\Ronni\AndroidStudioProjects\Sprint-Android-Best-Practices-Assignments\CrashlyticsDemoM02Ronnie\app\src\main\AndroidManifest.xml:16:27-74
+31            </intent-filter>
+32        </activity>
+33
+34        <provider
+34-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\9a43e0b4c1495a4e50b462e338649fdf\jetified-crashlytics-2.10.1\AndroidManifest.xml:19:9-23:38
+35            android:name="com.crashlytics.android.CrashlyticsInitProvider"
+35-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\9a43e0b4c1495a4e50b462e338649fdf\jetified-crashlytics-2.10.1\AndroidManifest.xml:20:13-75
+36            android:authorities="com.example.crashlyticsdemom02ronnie.crashlyticsinitprovider"
+36-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\9a43e0b4c1495a4e50b462e338649fdf\jetified-crashlytics-2.10.1\AndroidManifest.xml:21:13-75
+37            android:exported="false"
+37-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\9a43e0b4c1495a4e50b462e338649fdf\jetified-crashlytics-2.10.1\AndroidManifest.xml:22:13-37
+38            android:initOrder="90" />
+38-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\9a43e0b4c1495a4e50b462e338649fdf\jetified-crashlytics-2.10.1\AndroidManifest.xml:23:13-35
+39
+40        <receiver
+40-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\645802d86b83dfdf425b1e2d3f143b9d\play-services-measurement-17.2.1\AndroidManifest.xml:29:9-33:20
+41            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+41-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\645802d86b83dfdf425b1e2d3f143b9d\play-services-measurement-17.2.1\AndroidManifest.xml:30:13-85
+42            android:enabled="true"
+42-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\645802d86b83dfdf425b1e2d3f143b9d\play-services-measurement-17.2.1\AndroidManifest.xml:31:13-35
+43            android:exported="false" >
+43-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\645802d86b83dfdf425b1e2d3f143b9d\play-services-measurement-17.2.1\AndroidManifest.xml:32:13-37
+44        </receiver>
+45        <receiver
+45-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\645802d86b83dfdf425b1e2d3f143b9d\play-services-measurement-17.2.1\AndroidManifest.xml:34:9-42:20
+46            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+46-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\645802d86b83dfdf425b1e2d3f143b9d\play-services-measurement-17.2.1\AndroidManifest.xml:35:13-100
+47            android:enabled="true"
+47-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\645802d86b83dfdf425b1e2d3f143b9d\play-services-measurement-17.2.1\AndroidManifest.xml:36:13-35
+48            android:exported="true"
+48-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\645802d86b83dfdf425b1e2d3f143b9d\play-services-measurement-17.2.1\AndroidManifest.xml:37:13-36
+49            android:permission="android.permission.INSTALL_PACKAGES" >
+49-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\645802d86b83dfdf425b1e2d3f143b9d\play-services-measurement-17.2.1\AndroidManifest.xml:38:13-69
+50            <intent-filter>
+50-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\645802d86b83dfdf425b1e2d3f143b9d\play-services-measurement-17.2.1\AndroidManifest.xml:39:13-41:29
+51                <action android:name="com.android.vending.INSTALL_REFERRER" />
+51-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\645802d86b83dfdf425b1e2d3f143b9d\play-services-measurement-17.2.1\AndroidManifest.xml:40:17-79
+51-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\645802d86b83dfdf425b1e2d3f143b9d\play-services-measurement-17.2.1\AndroidManifest.xml:40:25-76
+52            </intent-filter>
+53        </receiver>
+54
+55        <service
+55-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\645802d86b83dfdf425b1e2d3f143b9d\play-services-measurement-17.2.1\AndroidManifest.xml:44:9-47:40
+56            android:name="com.google.android.gms.measurement.AppMeasurementService"
+56-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\645802d86b83dfdf425b1e2d3f143b9d\play-services-measurement-17.2.1\AndroidManifest.xml:45:13-84
+57            android:enabled="true"
+57-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\645802d86b83dfdf425b1e2d3f143b9d\play-services-measurement-17.2.1\AndroidManifest.xml:46:13-35
+58            android:exported="false" />
+58-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\645802d86b83dfdf425b1e2d3f143b9d\play-services-measurement-17.2.1\AndroidManifest.xml:47:13-37
+59        <service
+59-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\645802d86b83dfdf425b1e2d3f143b9d\play-services-measurement-17.2.1\AndroidManifest.xml:48:9-52:72
+60            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+60-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\645802d86b83dfdf425b1e2d3f143b9d\play-services-measurement-17.2.1\AndroidManifest.xml:49:13-87
+61            android:enabled="true"
+61-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\645802d86b83dfdf425b1e2d3f143b9d\play-services-measurement-17.2.1\AndroidManifest.xml:50:13-35
+62            android:exported="false"
+62-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\645802d86b83dfdf425b1e2d3f143b9d\play-services-measurement-17.2.1\AndroidManifest.xml:51:13-37
+63            android:permission="android.permission.BIND_JOB_SERVICE" />
+63-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\645802d86b83dfdf425b1e2d3f143b9d\play-services-measurement-17.2.1\AndroidManifest.xml:52:13-69
+64        <service
+64-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\dc1a1d88eee57a480f23e38cfcdfac55\play-services-measurement-api-17.2.1\AndroidManifest.xml:27:9-33:19
+65            android:name="com.google.firebase.components.ComponentDiscoveryService"
+65-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\dc1a1d88eee57a480f23e38cfcdfac55\play-services-measurement-api-17.2.1\AndroidManifest.xml:28:13-84
+66            android:exported="false" >
+66-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\dc1a1d88eee57a480f23e38cfcdfac55\play-services-measurement-api-17.2.1\AndroidManifest.xml:29:13-37
+67            <meta-data
+67-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\dc1a1d88eee57a480f23e38cfcdfac55\play-services-measurement-api-17.2.1\AndroidManifest.xml:30:13-32:85
+68                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+68-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\dc1a1d88eee57a480f23e38cfcdfac55\play-services-measurement-api-17.2.1\AndroidManifest.xml:31:17-139
+69                android:value="com.google.firebase.components.ComponentRegistrar" />
+69-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\dc1a1d88eee57a480f23e38cfcdfac55\play-services-measurement-api-17.2.1\AndroidManifest.xml:32:17-82
+70            <meta-data
+70-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\26dfc9ac4912cedae4578daa012fd795\firebase-iid-19.0.0\AndroidManifest.xml:32:13-34:85
+71                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+71-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\26dfc9ac4912cedae4578daa012fd795\firebase-iid-19.0.0\AndroidManifest.xml:33:17-96
+72                android:value="com.google.firebase.components.ComponentRegistrar" />
+72-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\26dfc9ac4912cedae4578daa012fd795\firebase-iid-19.0.0\AndroidManifest.xml:34:17-82
+73        </service>
+74
+75        <receiver
+75-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\26dfc9ac4912cedae4578daa012fd795\firebase-iid-19.0.0\AndroidManifest.xml:37:9-44:20
+76            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+76-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\26dfc9ac4912cedae4578daa012fd795\firebase-iid-19.0.0\AndroidManifest.xml:38:13-78
+77            android:exported="true"
+77-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\26dfc9ac4912cedae4578daa012fd795\firebase-iid-19.0.0\AndroidManifest.xml:39:13-36
+78            android:permission="com.google.android.c2dm.permission.SEND" >
+78-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\26dfc9ac4912cedae4578daa012fd795\firebase-iid-19.0.0\AndroidManifest.xml:40:13-73
+79            <intent-filter>
+79-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\26dfc9ac4912cedae4578daa012fd795\firebase-iid-19.0.0\AndroidManifest.xml:41:13-43:29
+80                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+80-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\26dfc9ac4912cedae4578daa012fd795\firebase-iid-19.0.0\AndroidManifest.xml:42:17-81
+80-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\26dfc9ac4912cedae4578daa012fd795\firebase-iid-19.0.0\AndroidManifest.xml:42:25-78
+81            </intent-filter>
+82        </receiver>
+83
+84        <provider
+84-->[com.google.firebase:firebase-common:19.0.0] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\7b70efb2d80433eed269cee6df891fef\firebase-common-19.0.0\AndroidManifest.xml:12:9-16:39
+85            android:name="com.google.firebase.provider.FirebaseInitProvider"
+85-->[com.google.firebase:firebase-common:19.0.0] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\7b70efb2d80433eed269cee6df891fef\firebase-common-19.0.0\AndroidManifest.xml:13:13-77
+86            android:authorities="com.example.crashlyticsdemom02ronnie.firebaseinitprovider"
+86-->[com.google.firebase:firebase-common:19.0.0] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\7b70efb2d80433eed269cee6df891fef\firebase-common-19.0.0\AndroidManifest.xml:14:13-72
+87            android:exported="false"
+87-->[com.google.firebase:firebase-common:19.0.0] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\7b70efb2d80433eed269cee6df891fef\firebase-common-19.0.0\AndroidManifest.xml:15:13-37
+88            android:initOrder="100" />
+88-->[com.google.firebase:firebase-common:19.0.0] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\7b70efb2d80433eed269cee6df891fef\firebase-common-19.0.0\AndroidManifest.xml:16:13-36
+89
+90        <activity
+90-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\02ad267f8fe39dcc9c8913dfd9e5b661\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+91            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+91-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\02ad267f8fe39dcc9c8913dfd9e5b661\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+92            android:exported="false"
+92-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\02ad267f8fe39dcc9c8913dfd9e5b661\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+93            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+93-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\02ad267f8fe39dcc9c8913dfd9e5b661\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+94
+95        <meta-data
+95-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\6ebae7b16169951c4cad9931999cf9bb\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+96            android:name="com.google.android.gms.version"
+96-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\6ebae7b16169951c4cad9931999cf9bb\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+97            android:value="@integer/google_play_services_version" />
+97-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Ronni\.gradle\caches\transforms-2\files-2.1\6ebae7b16169951c4cad9931999cf9bb\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+98    </application>
+99
+100</manifest>
