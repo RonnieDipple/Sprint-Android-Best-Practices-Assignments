@@ -63,5 +63,10 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.1.0'
 
+    // Support Design
+    implementation "com.android.support:design:$android_support_version"
+    implementation 'androidx.room:room-runtime:2.2.1'
+    annotationProcessor 'androidx.room:room-compiler:2.2.1'
+
 
 }

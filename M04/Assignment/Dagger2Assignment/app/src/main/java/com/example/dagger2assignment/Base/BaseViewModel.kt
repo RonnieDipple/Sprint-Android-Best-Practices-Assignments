@@ -1,7 +1,6 @@
 package com.example.dagger2assignment.Base
 
 import androidx.lifecycle.ViewModel
-import com.example.dagger2assignment.injection.component.DaggerViewModelInjector
 import com.example.dagger2assignment.injection.component.ViewModelInjector
 import com.example.dagger2assignment.injection.module.NetworkModule
 import com.example.dagger2assignment.ui.post.PostListViewModel
