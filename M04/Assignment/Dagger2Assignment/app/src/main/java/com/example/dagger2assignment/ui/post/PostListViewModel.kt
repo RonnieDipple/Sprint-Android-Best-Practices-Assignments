@@ -1,5 +1,7 @@
 package com.example.dagger2assignment.ui.post
 
+import android.view.View
+import androidx.lifecycle.MutableLiveData
 import com.example.dagger2assignment.Base.BaseViewModel
 import com.example.dagger2assignment.Network.PostApi
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -14,6 +16,8 @@ class PostListViewModel: BaseViewModel(){
 //All this gets the results
     private lateinit var subscription: Disposable
 
+    //MutableLiveData
+    val loadingVisibility: MutableLiveData<Int> = MutableLiveData()
     init {
         loadPosts()
     }
@@ -31,10 +35,14 @@ class PostListViewModel: BaseViewModel(){
     }
 
     private fun onRetrievePostListStart(){
+        //makes the view visible, pay attention to the function names
+        loadingVisibility.value = View.VISIBLE
 
     }
 
     private fun onRetrievePostListFinish(){
+        //makes the view gone
+        loadingVisibility.value = View.GONE
 
     }
 
@@ -46,7 +54,7 @@ class PostListViewModel: BaseViewModel(){
 
     }
 
-    //when the view model is no longer in use it should be disposed of 
+    //when the view model is no longer in use it should be disposed of
     override fun onCleared() {
         super.onCleared()
         subscription.dispose()
